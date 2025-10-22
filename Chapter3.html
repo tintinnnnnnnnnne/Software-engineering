@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-3 Agile Software Development</title>
+     <link rel="stylesheet" href="./src/output.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+    <link rel="icon" type="icon" href="Chapter3-img/icons8-3-100.png">
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">CHAPTER 3: AGILE SOFTWARE DEVELOPMENT</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="lists" href="#objectives" > Objectives </a></li>
+                <li><a class="lists" href="#3.1" > 3.1 Agile methods </a></li>
+                <li><a class="lists" href="#3.2" > 3.2 Plan-driven and agile development</a></li>
+                <li><a class="lists" href="#3.3" > 3.3 Extreme programming</a></li>
+                <li><a class="lists" href="#3.4" > 3.4 Agile project management</a></li>
+                <li><a class="lists" href="#3.5"> 3.5 Scaling agile methods</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+      <section>
+        <article >
+            <div class="main">
+            <hr>
+            <h2 class="title" id="objectives">OBJECTIVES:</h2>
+            <hr>
+            <p > The objective of this chapter is to introduce you to agile software
+             development methods. When you have read the chapter, you will:</p>
+             <ul >
+                <li> understand the rationale for agile software development methods,the agile manifesto, and the differences between agile 
+                    and plandriven development;</li>
+                <li> know the key practices in extreme programming and how these relate to the general principles of agile methods;</li>
+                <li>understand the Scrum approach to agile project management;</li>
+                <li>be aware of the issues and problems of scaling agile development methods to the development of large software systems</li>
+             </ul>
+             <hr>
+             <h2 class="title">CONTENTS:</h2>
+             <hr>
+             <ul>
+                <li> 3.1 Agile methods</li>
+                <li> 3.2 Plan-driven and agile development</li>
+                <li> 3.3 Extreme programming</li>
+                <li> 3.4 Agile project management</li>
+                <li> 3.5 Scaling agile methods</li>
+             </ul>
+             <hr>
+             <p>     Businesses today face a fast-changing, global environment that demands rapid software
+                     development to seize opportunities and stay competitive. Because requirements often 
+                     change unpredictably, traditional plan-driven models like the waterfall approach are 
+                     too rigid, leading to delays and outdated systems. While such models may still suit 
+                     safety-critical systems, business software needs flexible, rapid development processes 
+                     that adapt to evolving requirements. This need led to incremental development in the 1980s
+                     and gained momentum in the late 1990s with the rise of agile methodologies such as DSDM, 
+                     Scrum, and Extreme Programming.<br><br>
+
+                     Rapid software development processes are designed to produce useful software quickly.
+                    The software is not developed as a single unit but as a series of increments,with each
+                    increment including new system functionality. Although there are manyapproaches to rapid
+                    software development, they share some fundamental characteristics:<br><br></p>
+
+                <ol>
+                    <li> The processes of specification, design, and implementation are interleaved.
+                         There is no detailed system specification, and design documentation is mini
+                         mized or generated automatically by the programming environment used to
+                         implement the system. The user requirements document only defines the most
+                         important characteristics of the system.<br><br></li>
+                    <li> The system is developed in a series of versions. End-users and other system
+                        stakeholders are involved in specifying and evaluating each version. They may
+                        propose changes to the software and new requirements that should be imple
+                        mented in a later version of the system.<br><br></li>
+                    <li>System user interfaces are often developed using an interactive development
+                        system that allows the interface design to be quickly created by drawing and placing
+                        icons on the interface. The system may then generate a web-based interface for 
+                        a browser or an interface for a specific platform such as Microsoft Windows.<br><br></li>
+                </ol>
+
+                <p> Agile methods are incremental development methods in which the increments are
+                    small and, typically, new releases of the system are created and made available to cus
+                    tomers every two or three weeks. They involve customers in the development process
+                    to get rapid feedback on changing requirements. They minimize documentation by
+                    using informal communications rather than formal meetings with written documents.<br><br></p>
+
+                    <hr>
+            <div class="img">
+                <h2 style="text-align: center;" class="title" id="3.1">3.1 AGILE METHODS</h2>
+            </div>
+                    <hr>
+                <p > In the 1980s and early 1990s, software engineering
+                     emphasized plan-driven, heavyweight methods involving detailed planning, documentation, quality assurance, 
+                     and formal design tools, which suited large, long-lived,
+                    safety-critical systems like aerospace and government projects.<br> <br>
+                    These projects required coordination among large, distributed teams and justified the overhead of rigorous
+                    processes.<br>
+                    However, when applied to <b>smaller business systems</b>, the bureaucracy became excessive, with more effort<br>
+                    spent on planning and documentation than coding and testing. <br><br>
+                    This inefficiency, coupled with the need to adapt to rapidly changing requirements, led to the rise of agile
+                    methods in the 1990s. Agile approaches shifted focus to <b>incremental development, quick delivery of working software, customer
+                    feedback, and minimal documentation</b>, making them more effective for dynamic application development.<br><br>
+                    
+                    The philosophy behind agile methods is reflected in the agile manifesto that was
+                    agreed on by many of the leading developers of these methods.<br>
+                    </p>
+
+                    <p> This manifesto states:<br><br>
+                    
+                    We are uncovering better ways of developing software by doing it and helping others do it.<br>
+                    Through this work we have come to value:<br></p>
+
+                    <p> <i>Individuals and interactions over processes and tools<br><br>
+
+                        Working software over comprehensive documentation<br><br>
+
+                        Customer collaboration over contract negotiation<br><br>
+
+                        Responding to change over following a plan<br><br></i>
+                    
+                     That is, while there is value in the items on the right, we value the items on the<br>
+                     left more.<br><br>
+                    
+                     Probably the best-known agile method is extreme programming (Beck, 1999;
+                     Beck, 2000), which I describe later in this chapter. Other agile approaches include
+                     Scrum (Cohn, 2009; Schwaber, 2004; Schwaber and Beedle, 2001), Crystal
+                     (Cockburn, 2001; Cockburn, 2004), Adaptive Software Development (Highsmith,
+                     2000), DSDM (Stapleton, 1997; Stapleton, 2003), and Feature Driven Development
+                     (Palmer and Felsing, 2002). The success of these methods has led to some integration
+                     with more traditional development methods based on system modelling, resulting in
+                     the notion of agile modelling (Ambler and Jeffries, 2002) and agile instantiations of
+                     the Rational Unified Process (Larman, 2002).<br><br>
+                      Although these agile methods are all based around the notion of incremental devel
+                    opment and delivery, they propose different processes to achieve this. However, they
+                    share a set of principles, based on the agile manifesto, and so have much in common.
+                    These principles are shown in Figure 3.1. Different agile methods instantiate these prin
+                    ciples in different ways and I don’t have space to discuss all agile methods. Instead, I
+                    focus on two of the most widely used methods: extreme programming (Section 3.3) and
+                    Scrum (Section 3.4).<br><br>
+                
+                    Agile methods have been very successful for some types of system development:<br><br></p>
+
+                    <ol>
+                        <li> Product development where a software company is developing a small or
+                             medium-sized product for sale.<br><br></li>
+                        <li>Custom system development within an organization, where there is a clear com
+                            mitment from the customer to become involved in the development process and
+                            where there are not a lot of external rules and regulations that affect the software.<br><br></li>
+                    </ol>
+                    <div class="img">
+                    <img src="Chapter3-img/Screenshot 2025-09-06 151814.png" alt="img" >
+                    </div>
+                    <hr>
+                    <p style="text-align: center;" class="title">Figure 3.1 The Principles of Agile Methods</p>
+                    <hr>
+
+                    <p> As I discuss in the final section of this chapter, the success of agile methods has
+                        meant that there is a lot of interest in using these methods for other types of software
+                        development. However, because of their focus on small, tightly integrated teams,
+                        there are problems in scaling them to large systems. There have also been experi
+                        ments in using agile approaches for critical systems engineering (Drobna et al.,
+                        2004). However, because of the need for security, safety, and dependability analysis
+                        in critical systems, agile methods require significant modification before they can be
+                        routinely used for critical systems engineering.<br><br>
+                    
+                     In practice, the principles underlying agile methods are sometimes difficult to
+                     realize:</p>
+
+                     <ol>
+                        <li>Although the idea of customer involvement in the development process is an
+                            attractive one, its success depends on having a customer who is willing and able
+                            to spend time with the development team and who can represent all system
+                            stakeholders. Frequently, the customer representatives are subject to other pres
+                            sures and cannot take full part in the software development.<br><br></li>
+                        <li> Individual team members may not have suitable personalities for the intense
+                            involvement that is typical of agile methods, and therefore not interact well with
+                            other team members.<br><br></li>
+                        <li> Prioritizing changes can be extremely difficult, especially in systems for which
+                            there are many stakeholders. Typically, each stakeholder gives different priori
+                            ties to different changes.<br><br></li>
+                        <li> Maintaining simplicity requires extra work. Under pressure from delivery
+                            schedules, the team members may not have time to carry out desirable system
+                            simplifications.<br><br></li>
+                        <li> Many organizations, especially large companies, have spent years changing
+                            their culture so that processes are defined and followed. It is difficult for them to
+                            move to a working model in which processes are informal and defined by devel
+                            opment teams.<br><br></li>
+                     </ol>
+
+                     <p>A key non-technical challenge with agile, incremental development arises when software is
+                        built by an external supplier. Traditionally, contracts are based on a fixed set of requirements, 
+                        but agile’s evolving specifications make this difficult. Instead, contracts usually pay for developmen
+                        t time and effort, not for delivering predefined features. While this can benefit both parties if progress
+                        is smooth, disputes may arise if problems occur, leading to disagreements over responsibility and costs.
+                        Additionally, most agile literature focuses on new system development, while its use in software maintenance
+                        and evolution is less documented, despite maintenance being a major part of software engineering.<br><br>
+                        
+                        There are two questions that should be considered when considering agile methods and maintenance:<br><br></p>
+
+                        <ol>
+                            <li> Are systems that are developed using an agile approach maintainable, given the emphasis in the development 
+                                process of minimizing formal documentation?</li>
+                            <li> Can agile methods be used effectively for evolving a system in response to customer change requests?</li>
+                        </ol>
+                        
+                        <p>Agile methods often minimize formal documentation, arguing it quickly becomes outdated and unreliable. Instead,
+                            they emphasize clean, well-structured, and continually improved code as the basis for maintainability. However,
+                            the requirements document remains critical for system maintenance, as it explains what the system is meant to 
+                            do and helps assess the impact of changes. Since many agile methods capture requirements informally and incrementally, 
+                            they may lack a coherent, long-term record of requirements, which can pose challenges during system evolution.<br><br>
+                            
+                            Agile methods can make future system maintenance harder if requirements are poorly documented. However, applying agile
+                            practices during maintenance—such as incremental delivery, designing for change, and keeping systems simple—can be highly
+                            effective. In this sense, agile development itself can be seen as a form of continuous software evolution.<br><br>
+
+                            After delivery, maintaining customer involvement becomes difficult, since customers are less likely to dedicate time to ongoing
+                            maintenance. Mechanisms like formal change proposals may be needed to capture new requirements. Another challenge is team continuity:
+                            agile relies heavily on shared, undocumented knowledge, so breaking up the team can result in significant knowledge loss.<br><br>
+
+                            While advocates often promote agile enthusiastically and critics sometimes overstate its flaws, balanced views suggest that a
+                            hybrid approach—combining agile practices with selected plan-driven techniques—may offer the most effective path forward.<br><br></p>
+
+                            <hr>
+                            <h2 style="text-align: center;" class="title" id="3.2"> 3.2 PLAN-DRIVEN AND AGILE DEVELOPMENT</h2>
+                            <hr>
+
+                            <p> Agile approaches to software development consider design and implementation to be
+                             the central activities in the software process. They incorporate other activities, such as
+                            requirements elicitation and testing, into design and implementation. By contrast, a
+                            plan-driven approach to software engineering identifies separate stages in the soft
+                            ware process with outputs associated with each stage. The outputs from one stage are
+                            used as a basis for planning the following process activity. Figure 3.2 shows the dis
+                            tinctions between plan-driven and agile approaches to system specification.<br><br>
+                                
+                            In a plan-driven approach, iteration occurs within activities with formal docu
+                            ments used to communicate between stages of the process. For example, the require
+                            ments will evolve and, ultimately, a requirements specification will be produced.
+                            This is then an input to the design and implementation process. In an agile approach,
+                            iteration occurs across activities. Therefore, the requirements and the design are
+                            developed together, rather than separately.<br><br>
+                            </p>
+                            <div class="img">
+                            <img src="Chapter3-img/Screenshot 2025-09-06 155356.png" alt="img" >
+                            </div>
+                            <hr>
+                            <p style="text-align: center;" class="title"> Figure 3.2 Plan-driven and agile specification</p>
+                            <hr>
+
+                            <p> A plan-driven software process can support incremental development and deliv
+                            ery. It is perfectly feasible to allocate requirements and plan the design and develop
+                            ment phase as a series of increments. An agile process is not inevitably code-focused
+                            and it may produce some design documentation. As I discuss in the following sec
+                            tion, the agile development team may decide to include a documentation ‘spike’,
+                            where, instead of producing a new version of a system, the team produce system
+                            documentation.<br><br>
+                            
+                             In fact, most software projects include practices from plan-driven and agile
+                              approaches. To decide on the balance between a plan-based and an agile approach,
+                            you have to answer a range of technical, human, and organizational questions:<br><br></p>
+
+                            <ol>
+                            <li> Is it important to have a very detailed specification and design before moving to
+                            implementation? If so, you probably need to use a plan-driven approach.<br><br></li>
+                            <li> Is an incremental delivery strategy, where you deliver the software to customers
+                            and get rapid feedback from them, realistic? If so, consider using agile methods.<br><br></li>
+                            <li> How large is the system that is being developed? Agile methods are most effec
+                            tive when the system can be developed with a small co-located team who can
+                            communicate informally. This may not be possible for large systems that require
+                            larger development teams so a plan-driven approach may have to be used.<br><br></li>
+                            <li> What type of system is being developed? Systems that require a lot of analysis
+                            before implementation (e.g., real-time system with complex timing require
+                            ments) usually need a fairly detailed design to carry out this analysis. A plan
+                            driven approach may be best in those circumstances.<br><br></li>
+                            <li>What is the expected system lifetime? Long-lifetime systems may require more
+                            design documentation to communicate the original intentions of the system  developers to the 
+                            support team. However, supporters of agile methods rightly
+                            argue that documentation is frequently not kept up to date and it is not of much
+                            use for long-term system maintenance.<br><br></li>
+                            <li>What technologies are available to support system development? Agile methods
+                            often rely on good tools to keep track of an evolving design. If you are develop
+                            ing a system using an IDE that does not have good tools for program visualiza
+                            tion and analysis, then more design documentation may be required.<br><br></li>
+                            <li> How is the development team organized? If the development team is distributed
+                            or if part of the development is being outsourced, then you may need to develop
+                            design documents to communicate across the development teams. You may
+                            need to plan in advance what these are.<br><br></li>
+                            <li> Are there cultural issues that may affect the system development? Traditional
+                            engineering organizations have a culture of plan-based development, as this is
+                            the norm in engineering. This usually requires extensive design documentation,
+                            rather than the informal knowledge used in agile processes.<br><br></li>
+                            <li> How good are the designers and programmers in the development team? It is
+                            sometimes argued that agile methods require higher skill levels than plan-based
+                            approaches in which programmers simply translate a detailed design into code.
+                            If you have a team with relatively low skill levels, you may need to use the best
+                            people to develop the design, with others responsible for programming.<br><br></li>
+                            <li>Is the system subject to external regulation? If a system has to be approved by an
+                            external regulator (e.g., the Federal Aviation Authority [FAA] approve software
+                            that is critical to the operation of an aircraft) then you will probably be required
+                            to produce detailed documentation as part of the system safety case.<br><br></li>
+                            </ol>
+
+                            <p> In reality, the issue of whether a project can be labelled as plan-driven or agile is
+                            not very important. Ultimately, the primary concern of buyers of a software system
+                            is whether or not they have an executable software system that meets their needs and
+                            does useful things for the individual user or the organization. In practice, many com
+                            panies who claim to have used agile methods have adopted some agile practices and
+                            have integrated these with their plan-driven processes.<br><br></p>
+                            <hr>
+
+                            <div class="img">
+                            <h2 style="text-align: center;" class="title" id="3.3">3.3 EXTREME PROGRAMMING</h2>
+                            </div>
+                                
+                            <hr>
+                            <p>Extreme programming (XP) is perhaps the best known and most widely used of the
+                            agile methods. The name was coined by Beck (2000) because the approach was
+                            developed by pushing recognized good practice, such as iterative development, to
+                            ‘extreme’ levels. For example, in XP, several new versions of a system may be devel
+                            oped by different programmers, integrated and tested in a day.</p>
+
+                            <div class="img">
+                                <img src="Chapter3-img/Screenshot 2025-09-06 160931.png" alt="img" >
+                            </div>
+                            <hr>
+
+                            <p style="text-align: center;" class="title"> FIGURE 3.3 THE EXTREME PROGRAMMING CYCLE</p>
+                            <hr>
+
+                            <p> In extreme programming, requirements are expressed as scenarios (called user
+                            stories), which are implemented directly as a series of tasks. Programmers work in
+                            pairs and develop tests for each task before writing the code. All tests must be suc
+                            cessfully executed when new code is integrated into the system. There is a short time
+                            gap between releases of the system. Figure 3.3 illustrates the XP process to produce
+                            an increment of the system that is being developed.<br><br>
+                                
+                            Extreme programming involves a number of practices, summarized in Figure 3.4,
+                            which reflect the principles of agile methods:</p>
+
+                            <ol>
+                            <li> Incremental development is supported through small, frequent releases of the
+                            system. Requirements are based on simple customer stories or scenarios that are
+                            used as a basis for deciding what functionality should be included in a system
+                            increment.<br><br></li>
+                            <li>Customer involvement is supported through the continuous engagement of the
+                            customer in the development team. The customer representative takes part in the
+                            development and is responsible for defining acceptance tests for the system.<br><br></li>
+                            <li>People, not process, are supported through pair programming, collective owner
+                            ship of the system code, and a sustainable development process that does not
+                            involve excessively long working hours.<br><br></li>
+                           <li>Change is embraced through regular system releases to customers, test-first
+                            development, refactoring to avoid code degeneration, and continuous integra
+                            tion of new functionality.<br><br></li>
+                           <li>Maintaining simplicity is supported by constant refactoring that improves code
+                           quality and by using simple designs that do not unnecessarily anticipate future
+                           changes to the system.<br><br></li>
+                           </ol>
+
+                           <p> In an XP process, customers are intimately involved in specifying and prioritizing
+                           system requirements. The requirements are not specified as lists of required system
+                           functions. Rather, the system customer is part of the development team and discusses
+                           scenarios with other team members. Together, they develop a ‘story card’ that encap
+                           sulates the customer needs. The development team then aims to implement that sce
+                           nario in a future release of the software. An example of a story card for the mental<br>
+                           </p>
+                           <div class="img">
+                            <img src="Chapter3-img/Screenshot 2025-09-06 161606.png" alt="img">
+                           </div>
+                           <hr>
+                           <p style="text-align: center;" class="title" > FIGURE 3.4 EXTREME PROGRAMMING PRACTICES
+                           </p>
+                           <hr>
+
+                           <p> health care patient management system is shown in Figure 3.5. This is a short
+                            description of a scenario for prescribing medication for a patient.<br><br>
+
+                            The story cards are the main inputs to the XP planning process or the ‘planning
+                            game’. Once the story cards have been developed, the development team breaks these
+                            down into tasks (Figure 3.6) and estimates the effort and resources required for imple
+                            menting each task. This usually involves discussions with the customer to refine the
+                            requirements. The customer then prioritizes the stories for implementation, choosing
+                            those stories that can be used immediately to deliver useful business support. The
+                            intention is to identify useful functionality that can be implemented in about two
+                            weeks, when the next release of the system is made available to the customer.<br><br>
+
+                            Of course, as requirements change, the unimplemented stories change or may be
+                            discarded. If changes are required for a system that has already been delivered, new
+                            story cards are developed and again, the customer decides whether these changes
+                            should have priority over new functionality.</p>
+                            <div class="img">
+                            <img src="Chapter3-img/Screenshot 2025-09-06 162026.png" alt="img">
+                            </div>
+                            <hr>
+                            <p style="text-align: center;" class="title"> FIGURE 3.5 A ‘PRESCRIBING MEDICATION’STORY.</p>
+                            <hr>
+                            <p> Sometimes, during the planning game, questions that cannot be easily answered
+                            come to light and additional work is required to explore possible solutions. The team
+                            may carry out some prototyping or trial development to understand the problem and
+                            solution. In XP terms, this is a ‘spike’, an increment where no programming is done.
+                            There may also be ‘spikes’ to design the system architecture or to develop system
+                            documentation.<br><br>
+                            Extreme programming takes an ‘extreme’ approach to incremental development.
+                            New versions of the software may be built several times per day and releases are
+                            delivered to customers roughly every two weeks. Release deadlines are never
+                            slipped; if there are development problems, the customer is consulted and function
+                            ality is removed from the planned release.<br><br>
+                            When a programmer builds the system to create a new version, he or she must run
+                            all existing automated tests as well as the tests for the new functionality. The new
+                            build of the software is accepted only if all tests execute successfully. This then
+                            becomes the basis for the next iteration of the system.<br><br>
+                            A fundamental precept of traditional software engineering is that you should
+                            design for change. That is, you should anticipate future changes to the software and
+                            design it so that these changes can be easily implemented.<br><br> Extreme programming,
+                            however, has discarded this principle on the basis that designing for change is often
+                            wasted effort. It isn’t worth taking time to add generality to a program to cope with
+                            change.<br><br> The changes anticipated often never materialize and completely different
+                            change requests may actually be made. Therefore, the XP approach accepts that
+                            changes will happen and reorganize the software when these changes actually occur.
+                            </p>
+                            <div class="img">
+                            <img src="Chapter3-img/Screenshot 2025-09-06 162557.png" alt="img">
+                            </div>
+                            <hr>
+                            <p style="text-align: center;" class="title"> Figure 3.6 Example of task cards for prescribing medication.</p>
+                            <hr>
+
+                            <p> A general problem with incremental development is that it tends to degrade the
+                            software structure, so changes to the software become harder and harder to imple
+                            ment. Essentially, the development proceeds by finding workarounds to problems,
+                            with the result that code is often duplicated, parts of the software are reused in inap
+                            propriate ways, and the overall structure degrades as code is added to the system.<br><br>
+                            Extreme programming tackles this problem by suggesting that the software
+                            should be constantly refactored. This means that the programming team look for
+                            possible improvements to the software and implement them immediately. When a
+                            team member sees code that can be improved, they make these improvements even
+                            in situations where there is no immediate need for them. Examples of refactoring
+                            include the reorganization of a class hierarchy to remove duplicate code, the tidy
+                            ing up and renaming of attributes and methods, and the replacement of code with
+                            calls to methods defined in a program library. Program development environments,
+                            such as Eclipse (Carlson, 2005), include tools for refactoring which simplify the
+                            process of finding dependencies between code sections and making global code
+                            modifications.<br><br>
+                            In principle then, the software should always be easy to understand and change as
+                            new stories are implemented. In practice, this is not always the case. Sometimes
+                            development pressure means that refactoring is delayed because the time is devoted
+                            to the implementation of new functionality. Some new features and changes cannot
+                            readily be accommodated by code-level refactoring and require the architecture of
+                            the system to be modified.<br><br>
+                            In practice, many companies that have adopted XP do not use all of the extreme
+                            programming practices listed in Figure 3.4. They pick and choose according to their
+                            local ways of working. For example, some companies find pair programming help
+                            ful; others prefer to use individual programming and reviews. To accommodate dif
+                            ferent levels of skill, some programmers don’t do refactoring in parts of the system
+                            they did not develop, and conventional requirements may be used rather than user
+                            stories. However, most companies who have adopted an XP variant use small
+                            releases, test-first development, and continuous integration.<br><br></p>
+
+                            <hr>
+                                <h2 style="text-align: center;" class="title" id="3.3.1"> 3.3.1 TESTING IN XP</h2>
+                            <hr>
+
+                            <p>As I discussed in the introduction to this chapter, one of the important differences
+                            between incremental development and plan-driven development is in the way that
+                            the system is tested. With incremental development, there is no system specification
+                            that can be used by an external testing team to develop system tests. As a conse
+                            quence, some approaches to incremental development have a very informal testing
+                            process, in comparison with plan-driven testing.<br><br>
+                            To avoid some of the problems of testing and system validation, XP emphasizes
+                            the importance of program testing. XP includes an approach to testing that reduces
+                            the chances of introducing undiscovered errors into the current version of the system.<br><br>
+                                               
+                            The key features of testing in XP are:</p>
+
+                            <ol>
+                                <li> Test-first development</li>
+                                <li> incremental test development from scenarios,</li>
+                                <li> user involvement in the test development and validation, and</li>
+                                <li> the use of automated testing frameworks.</li>
+                            </ol>
+
+                            <p> Test-first development is one of the most important innovations in XP. Instead of
+                            writing some code and then writing tests for that code, you write the tests before you
+                            write the code. This means that you can run the test as the code is being written and
+                            discover problems during development.<br><br>
+                            Writing tests implicitly defines both an interface and a specification of behavior
+                            for the functionality being developed. Problems of requirements and interface misun
+                            derstandings are reduced. This approach can be adopted in any process in which there
+                            is a clear relationship between a system requirement and the code implementing that
+                            requirement. In XP, you can always see this link because the story cards representing
+                            the requirements are broken down into tasks and the tasks are the principal unit of
+                            implementation. The adoption of test-first development in XP has led to more general
+                            test-driven approaches to development (Astels, 2003). I discuss these in Chapter 8.
+                            In test-first development, the task implementers have to thoroughly understand
+                            the specification so that they can write tests for the system. This means that ambigu
+                            ities and omissions in the specification have to be clarified before implementation
+                            begins. Furthermore, it also avoids the problem of ‘test-lag’. This may happen when
+                            the developer of the system works at a faster pace than the tester. The implementa
+                            tion gets further and further ahead of the testing and there is a tendency to skip tests,
+                            so that the development schedule can be maintained.<br><br>
+                            User requirements in XP are expressed as scenarios or stories and the user priori
+                            tizes these for development. The development team assesses each scenario and
+                            breaks it down into tasks. For example, some of the task cards developed from the
+                            story card for prescribing medication (Figure 3.5) are shown in Figure 3.6. Each task
+                            generates one or more unit tests that check the implementation described in that task.
+                            Figure 3.7 is a shortened description of a test case that has been developed to check
+                            that the prescribed dose of a drug does not fall outside known safe limits.<br><br></p>
+
+                            <div class="img">
+                                <img src="Chapter3-img/Screenshot 2025-09-06 163344.png" alt="img" >
+                            </div>
+                            <hr>
+                            <p style="text-align: center;" class="title"> Figure 3.7 Test case description for dose checking</p>
+                            <hr>
+
+                            <p> The role of the customer in the testing process is to help develop acceptance tests
+                            for the stories that are to be implemented in the next release of the system. As I dis
+                            cuss in Chapter 8, acceptance testing is the process where the system is tested using
+                            customer data to check that it meets the customer’s real needs.<br><br>
+                            Test-first development and automated testing usually results in a large number of
+                            tests being written and executed. However, this approach does not necessarily lead to
+                            thorough program testing. There are three reasons for this:</p>
+
+                            <ol>
+                            <li>Programmers prefer programming to testing and sometimes they take shortcuts
+                            when writing tests. For example, they may write incomplete tests that do not
+                            check for all possible exceptions that may occur.<br><br>
+                            </li>
+                            <li>Some tests can be very difficult to write incrementally. For example, in a com
+                            plex user interface, it is often difficult to write unit tests for the code that imple
+                            ments the ‘display logic’ and workflow between screens.<br><br></li>
+                            <li> It difficult to judge the completeness of a set of tests. Although you may have a
+                            lot of system tests, your test set may not provide complete coverage. Crucial
+                            parts of the system may not be executed and so remain untested.<br><br></li>
+                            </ol>
+                           <p> Therefore, although a large set of frequently executed tests may give the impres
+                            sion that the system is complete and correct, this may not be the case. If the tests are
+                            not reviewed and further tests written after development, then undetected bugs may
+                            be delivered in the system release.</p>
+
+                            <hr>
+                                <h2 style="text-align: center;" class="title" id="3.3.2"> 3.3.2 Pair programming</h2>
+                            <hr>
+
+                            <p>The use of pair programming has a number of advantages:</p>
+                            <ol>
+                                <li>It supports the idea of collective ownership and responsibility for the system.
+                                This reflects Weinberg’s (1971) idea of egoless programming where the soft
+                                ware is owned by the team as a whole and individuals are not held responsible
+                                for problems with the code. Instead, the team has collective responsibility for
+                                resolving these problems.<br><br></li>
+                                <li> It acts as an informal review process because each line of code is looked at by at
+                                least two people. Code inspections and reviews (covered in Chapter 24) are very
+                                successful in discovering a high percentage of software errors. However, they
+                                are time consuming to organize and, typically, introduce delays into the devel
+                                opment process. Although pair programming is a less formal process that prob
+                                ably doesn’t find as many errors as code inspections, it is a much cheaper
+                                inspection process than formal program inspections.<br><br></li>
+                               <li> It helps support refactoring, which is a process of software improvement. The diffi
+                               culty of implementing this in a normal development environment is that effort in
+                               refactoring is expended for long-term benefit. An individual who practices refac
+                               toring may be judged to be less efficient than one who simply carries on developing
+                               code. Where pair programming and collective ownership are used, others benefit
+                               immediately from the refactoring so they are likely to support the process.<br><br></li>
+                            </ol>
+                            <hr>
+                                <h2 style="text-align: center;" class="title" id="3.4">3.4 Agile project management</h2>
+                            <hr>
+                            <div class="img">
+                              <img src="Chapter3-img/Screenshot 2025-09-06 164203.png" alt="img" >
+                            </div>
+                            <hr>
+                                <p class="title" style="text-align: center;"> Figure 3.8 The Scrum process</p>
+                            <hr>
+                                <p> This is followed by a series of sprint cycles, where each cycle develops an increment
+                                of the system. Finally, the project closure phase wraps up the project, completes
+                                required documentation such as system help frames and user manuals, and assesses
+                                the lessons learned from the project.</p>
+                                                        
+                            <hr>
+                                <h2 style="text-align: center;" class="title" id="3.5"> 3.5 Scaling agile methods</h2>
+                            <hr>
+                            <p>Agile methods were developed for use by small programming teams who could
+                            work together in the same room and communicate informally. Agile methods have
+                            therefore been mostly used for the development of small and medium-sized systems.
+                            Of course, the need for faster delivery of software, which is more suited to customer
+                            needs, also applies to larger systems. Consequently, there has been a great deal of
+                            interest in scaling agile methods to cope with larger systems, developed by large
+                            organizations.<br><br>
+
+                            Denning et al. (2008) argue that the only way to avoid common software engineer
+                            ing problems, such as systems that don’t meet customer needs and budget overruns, is
+                            to find ways of making agile methods work for large systems. Leffingwell (2007) dis
+                            cusses which agile practices scale to large systems development. Moore and Spens
+                            (2008) report on their experience of using an agile approach to develop a large med
+                            ical system with 300 developers working in geographically distributed teams.<br><br>
+
+                            Large software system development is different from small system development in a number of ways:
+                            </p>
+
+
+                            <ol>
+                                <li> Large systems are usually collections of separate, communicating systems,
+                                where separate teams develop each system. Frequently, these teams are working
+                                in different places, sometimes in different time zones. It is practically impossi
+                                ble for each team to have a view of the whole system. Consequently, their prior
+                                ities are usually to complete their part of the system without regard for wider
+                                systems issues.</li>
+                                <li> Large systems are ‘brownfield systems’ (Hopkins and Jenkins, 2008); that is
+                                they include and interact with a number of existing systems. Many of the system
+                                requirements are concerned with this interaction and so don’t really lend them
+                                selves to flexibility and incremental development. Political issues can also be
+                                significant here—often the easiest solution to a problem is to change an existing
+                                system. However, this requires negotiation with the managers of that system to
+                                convince them that the changes can be implemented without risk to the system’s
+                                operation.</li>
+                                <li>Where several systems are integrated to create a system, a significant fraction of
+                                the development is concerned with system configuration rather than original
+                                code development. This is not necessarily compatible with incremental develop
+                                ment and frequent system integration</li>
+                                <li> Large systems and their development processes are often constrained by exter
+                                nal rules and regulations limiting the way that they can be developed, that
+                                require certain types of system documentation to be produced, etc.</li>
+                                <li> Large systems have a long procurement and development time. It is difficult to
+                                maintain coherent teams who know about the system over that period as,
+                                inevitably, people move on to other jobs and projects.</li>
+                                <li> Large systems usually have a diverse set of stakeholders. For example, nurses and
+                                administrators may be the end-users of a medical system but senior medical staff,
+                                hospital managers, etc. are also stakeholders in the system. It is practically impos
+                                sible to involve all of these different stakeholders in the development process.</li>
+
+                            </ol>
+                                <p> There are two perspectives on the scaling of agile methods:</p>
+
+                            <ol>
+                            <li> A ‘scaling up’ perspective, which is concerned with using these methods for
+                            developing large software systems that cannot be developed by a small team.
+                            </li>
+                            <li> A ‘scaling out’ perspective, which is concerned with how agile methods can be
+                            introduced across a large organization with many years of software development
+                            experience.</li>
+                            </ol>
+                            <p> Agile methods have to be adapted to cope with large systems engineering.
+                            Leffingwell (2007) argues that it is essential to maintain the fundamentals of agile
+                            methods—flexible planning, frequent system releases, continuous integration, test
+                            driven development, and good team communications. I believe that the critical adap
+                            tations that have to be introduced are as follows:</p>
+
+                            <ol>
+                                <li>For large systems development, it is not possible to focus only on the code of the
+                                    system. You need to do more up-front design and system documentation. The
+                                    software architecture has to be designed and there has to be documentation pro
+                                    duced to describe critical aspects of the system, such as database schemas, the
+                                    work breakdown across teams, etc.<br><br></li>
+                                <li> Cross-team communication mechanisms have to be designed and used. This
+                                    should involve regular phone and video conferences between team members and
+                                    frequent, short electronic meetings where teams update each other on progress.
+                                    Arange of communication channels such as e-mail, instant messaging, wikis,
+                                    and social networking systems should be provided to facilitate communications.<br><br></li>
+                                <li>Continuous integration, where the whole system is built every time any devel
+                                    oper checks in a change, is practically impossible when several separate pro
+                                    grams have to be integrated to create the system. However, it is essential to
+                                    maintain frequent system builds and regular releases of the system. This may
+                                    mean that new configuration management tools that support multi-team soft
+                                    ware development have to be introduced.<br><br></li>
+                            </ol>
+                            <p> Small software companies that develop software products have been amongst the
+                            most enthusiastic adopters of agile methods. These companies are not constrained by
+                            organizational bureaucracies or process standards and they can change quickly to
+                            adopt new ideas. Of course, larger companies have also experimented with agile
+                            methods in specific projects, but it is much more difficult for them to ‘scale out’
+                            these methods across the organization. Lindvall, et al. (2004) discuss some of the
+                            problems in scaling-out agile methods in four large technology companies.<br><br>
+                                                                
+                            It is difficult to introduce agile methods into large companies for a number of
+                            reasons:</p>
+                            <ol>
+                                <li>Project managers who do not have experience of agile methods may be reluctant
+                                to accept the risk of a new approach, as they do not know how this will affect
+                                their particular projects.<br><br></li>
+                                <li>Large organizations often have quality procedures and standards that all projects
+                                are expected to follow and, because of their bureaucratic nature, these are likely to
+                                be incompatible with agile methods. Sometimes, these are supported by software  tools (e.g., 
+                                requirements management tools) and the use of these tools is mandated
+                                their particular projects.<br><br>
+                                for all projects.</li>
+                                <li> Agile methods seem to work best when team members have a relatively high
+                                skill level. However, within large organizations, there are likely to be a wide
+                                range of skills and abilities, and people with lower skill levels may not be effec
+                                their particular projects.<br><br>
+                                tive team members in agile processes.</li>
+                                <li>There may be cultural resistance to agile methods, especially in those organizations
+                                that have a long history of using conventional systems engineering processes.<br><br></li>
+                                </ol>
+                                <p> Change management and testing procedures are examples of company proce
+                                dures that may not be compatible with agile methods. Change management is the
+                                process of controlling changes to a system, so that the impact of changes is pre
+                                dictable and costs are controlled. All changes have to be approved in advance before
+                                they are made and this conflicts with the notion of refactoring.<br><br> In XP, any developer
+                                can improve any code without getting external approval. For large systems, there are
+                                also testing standards where a system build is handed over to an external testing
+                                team. This may conflict with the test-first and test-often approaches used in XP.<br><br>
+                                Introducing and sustaining the use of agile methods across a large organization is
+                                a process of cultural change. Cultural change takes a long time to implement and
+                                often requires a change of management before it can be accomplished. Companies
+                                wishing to use agile methods need evangelists to promote change. They must devote
+                                significant resources to the change process. At the time of writing, few large compa
+                                nies have made a successful transition to agile development across the organization.<br><br>
+                                </p>
+                                                        
+
+              </div>                                          
+          </article>
+      </section>
+   </main>
+
+    <footer>
+        <section>
+            <article>
+                <div>
+                    <p style="text-align: center;"><b>
+                        Developed By:<br>
+                        Princes Margareth Latiza</b></p>
+                </div>
+            </article>
+        </section>
+
+    </footer>
+</body>
+</html>
