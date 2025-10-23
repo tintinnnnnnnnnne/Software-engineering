@@ -9,11 +9,7 @@ module.exports = {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
-      },
-      colors: {
-        primary: '#3b82f6',   // Tailwind blue
-        secondary: '#1e293b', // dark slate for background
-      },
+      }
     },
   },
   plugins: [],

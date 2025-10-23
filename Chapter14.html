@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 14: Security Engineering</title>
-    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="./src/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,32 +12,28 @@
 
 <body class="bg-gray-50 min-h-screen flex flex-col">
     <!-- Fixed Header -->
-    <header class="sticky top-0 z-50 bg-white shadow-sm">
+    <header class="sticky top-0 z-50 bg-green-900 shadow-sm">
         <div class="container mx-auto px-4 py-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex items-center space-x-2 mb-4 md:mb-0">
-                    <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
-                        <span class="text-white font-bold text-lg">SE</span>
-                    </div>
-                    <h1 class="text-2xl md:text-3xl font-bold text-blue-900">Software Engineering</h1>
+                    <h1 class="text-2xl md:text-3xl font-bold text-white">Software Engineering</h1>
                 </div>
-                <nav class="flex space-x-4">
+                <nav class="flex space-x-2 md:space-x-4">
                     <a href="index.html" class="chap-link">Home</a>
                     <a href="Chapter1.html" class="chap-link">Chapter 1</a>
                     <a href="Chapter2.html" class="chap-link">Chapter 2</a>
                     <a href="Chapter3.html" class="chap-link">Chapter 3</a>
                     <a href="Chapter8.html" class="chap-link">Chapter 8</a>
-                    <a href="Chapter14.html" class="text-blue-900 font-bold">Chapter 14</a>
+                    <a href="Chapter14.html" class="text-green-950 bg-white rounded-4xl p-2 font-bold">Chapter 14</a>
                 </nav>
             </div>
         </div>
     </header>
-
+    <!-- Sidebar Navigation -->
     <div class="flex flex-1">
-        <!-- Fixed Sidebar Navigation -->
-        <nav class="sticky top-20 h-[calc(100vh-5rem)] overflow-y-auto w-64 bg-white shadow-lg p-6 hidden md:block">
+        <nav class="sticky top-26 lg:top-18.5 h-[calc(100vh-5rem)] overflow-y-auto w-64 bg-green-900 shadow-lg p-6 hidden md:block">
             <div class="mb-6">
-                <h2 class="text-xl font-bold text-blue-900">Chapter 14: Security Engineering</h2>
+                <h2 class="text-xl font-bold text-white">Chapter 14: Security Engineering</h2>
             </div>
 
             <div class="space-y-2">
@@ -48,16 +44,16 @@
             </div>
 
             <div class="mt-8 pt-6 border-t border-gray-200">
-                <p class="text-sm text-gray-500">Created by: Christine P. De Padua</p>
+                <p class="text-sm text-white">Created by: Christine P. De Padua</p>
             </div>
         </nav>
 
         <!-- Main Content -->
         <main class="flex-1 ml-0 md:ml-0 text-justify">
             <div class="container mx-auto px-4 py-8">
-                <article class="bg-white rounded-lg shadow-md p-6 md:p-8">
+                <article class=" p-6 md:p-8">
                     <section id="introduction" class="mb-12 scroll-mt-24">
-                        <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4">Introduction</h2>
+                        <h2 class="chap-h2">Introduction</h2>
                         <p class="text">
                             The widespread use of the Internet in the 1990s introduced a new challenge for software engineers—designing and implementing systems that were secure. As more and more systems were connected to the Internet, a variety of different external attacks were devised to threaten these systems. The problems of producing dependable systems were hugely increased. Systems engineers had to consider threats from malicious and technically skilled attackers as well as problems resulting from accidental mistakes in the development process.
                         </p>
@@ -145,7 +141,7 @@
 
                     <section id="section-14-1" class="mb-12 scroll-mt-24">
                         <!-- Section 14.1 content -->
-                         <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4" >14.1 Security risk management</h2>
+                         <h2 class="chap-h2" >14.1 Security risk management</h2>
 
                         <p class="text">
                             Security risk management balances the potential financial losses from attacks against the costs of implementing security measures. This is a business decision, not a technical one, meaning senior management is responsible for accepting security costs or the risks of not having them. Software engineers are vital participants, providing technical guidance to inform these decisions. The organizational security policy is a key input to this process, as it defines what is and isn't allowed, helping to identify potential threats. Risk assessment is an ongoing process that begins before a system is acquired and continues throughout its entire lifecycle.
@@ -252,7 +248,7 @@
                     </section>
 
                     <section id="section-14-2" class="mb-12 scroll-mt-24">
-                        <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4">14.2 Design for security</h2>
+                        <h2 class="chap-h2">14.2 Design for security</h2>
                         <!-- Section 14.2 content -->
                         <p class="text">
                             It is generally true that it is very difficult to add security to a system after it has been implemented. Therefore, you need to take security issues into account during the systems design process. In this section, I focus primarily on issues of system design, because this topic isn't given the attention it deserves in computer security books. Implementation issues and mistakes also have a major impact on security but these are often dependent on the specific technology used.
@@ -432,7 +428,7 @@
                     </section>
 
                     <section id="section-14-3" class="mb-12 scroll-mt-24">
-                        <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4">14.3 System survivability</h2>
+                        <h2 class="chap-h2">14.3 System survivability</h2>
                         <!-- Section 14.3 content -->
                          <p class="text">
                             So far, I have discussed security engineering from the perspective of an application that is under development. The system procurer and developer have control over all aspects of the system that might be attacked. In reality, as I suggested in Figure 14.1, modern distributed systems inevitably rely on an infrastructure that includes off-the-shelf systems and reusable components that have been developed by different organizations. The security of these systems does not just depend on local design decisions. It is also affected by the security of external applications, web services, and the network infrastructure.
@@ -544,29 +540,31 @@
                     </section>
                 </article>
             </div>
+                <!-- Footer -->
+            <footer class="bg-green-700 text-white py-8 mt-12">
+                <div class="container mx-auto px-4 text-center">
+                    <div class="mb-6">
+                        <h3 class="text-xl font-heading font-bold mb-4">Key Points</h3>
+                        <ul class="list-disc pl-6 space-y-2 text-primary-200 text-justify">
+                            <li>Security engineering focuses on how to develop and maintain software systems that can resist malicious attacks intended to damage a computer-based system or its data.</li>
+                            <li>Security threats can be threats to the confidentiality, integrity, or availability of a system or its data.</li>
+                            <li>Security risk management involves assessing the losses that might ensue from attacks on a system, and deriving security requirements that are aimed at eliminating or reducing these losses.</li>
+                            <li>Design for security involves designing a secure system architecture, following good practice for secure systems design, and including functionality to minimize the possibility of introducing vulnerabilities when the system is deployed.</li>
+                            <li>Key issues when designing a secure systems architecture include organizing the system structure to protect key assets and distributing the system assets to minimize the losses from a successful attack.</li>
+                            <li>Security design guidelines sensitize system designers to security issues that they may not have considered. They provide a basis for creating security review checklists.</li>
+                            <li>To support secure deployment you should provide a way of displaying and analyzing system configurations, localize configuration settings so that important configurations are not forgotten, minimize default privileges assigned to system users, and provide ways to repair security vulnerabilities.</li>
+                            <li>System survivability reflects the ability of a system to continue to deliver essential business or mission-critical services to legitimate users while it is under attack, or after part of the system has been damaged.</li>
+                        </ul>
+                    </div>
+                    <hr class="border-primary-700 my-6">
+                    <p class="text-white">Software Engineering - BSIT/BA-3A</p>
+                    <p class="text-white text-sm mt-2">&copy; 2023 All rights reserved.</p>
+                </div>
+            </footer>
         </main>
+        
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-blue-800 text-white py-8 mt-12">
-        <div class="container mx-auto px-4 text-center">
-            <div class="mb-6">
-                <h3 class="text-xl font-heading font-bold mb-4">Key Points</h3>
-                <ul class="list-disc pl-6 space-y-2 text-primary-200">
-                    <li>Security engineering focuses on how to develop and maintain software systems that can resist malicious attacks intended to damage a computer-based system or its data.</li>
-                    <li>Security threats can be threats to the confidentiality, integrity, or availability of a system or its data.</li>
-                    <li>Security risk management involves assessing the losses that might ensue from attacks on a system, and deriving security requirements that are aimed at eliminating or reducing these losses.</li>
-                    <li>Design for security involves designing a secure system architecture, following good practice for secure systems design, and including functionality to minimize the possibility of introducing vulnerabilities when the system is deployed.</li>
-                    <li>Key issues when designing a secure systems architecture include organizing the system structure to protect key assets and distributing the system assets to minimize the losses from a successful attack.</li>
-                    <li>Security design guidelines sensitize system designers to security issues that they may not have considered. They provide a basis for creating security review checklists.</li>
-                    <li>To support secure deployment you should provide a way of displaying and analyzing system configurations, localize configuration settings so that important configurations are not forgotten, minimize default privileges assigned to system users, and provide ways to repair security vulnerabilities.</li>
-                    <li>System survivability reflects the ability of a system to continue to deliver essential business or mission-critical services to legitimate users while it is under attack, or after part of the system has been damaged.</li>
-                </ul>
-            </div>
-            <hr class="border-primary-700 my-6">
-            <p class="text-blue-200">Software Engineering - BSIT/BA-3A</p>
-            <p class="text-blue-300 text-sm mt-2">&copy; 2023 All rights reserved.</p>
-        </div>
-    </footer>
+
 </body>
 </html>

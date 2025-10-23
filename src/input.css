@@ -20,12 +20,12 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #3b82f6;
+    background: #003b02;
     border-radius: 4px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #2563eb;
+    background: #00c251;
   }
 }
 
@@ -35,14 +35,18 @@
   }
 }
 
+/* chapter 14 */
+.chap-h2{
+  @apply text-2xl md:text-3xl font-bold text-green-50 mb-4 bg-green-900 rounded-2xl p-1 text-center;
+}
 .chap-link {
-  @apply text-blue-400 hover:text-blue-800 font-medium transition;
+  @apply text-white hover:text-yellow-500 font-medium transition p-2;
 }
 
 .text {
-  @apply mb-4 text-gray-700;
+  @apply mb-4 text-gray-800;
 }
 
 .nav-a-hover {
-  @apply block py-3 px-4 text-gray-800 hover:font-semibold hover:bg-blue-100  hover:text-blue-900 rounded-lg transition-all duration-200 border-l-4 border-transparent hover:border-blue-500;
+  @apply block py-3 px-4 text-white hover:font-semibold hover:bg-white  hover:text-green-900 rounded-lg transition-all duration-200 border-l-4 border-transparent hover:border-green-500;
 }
